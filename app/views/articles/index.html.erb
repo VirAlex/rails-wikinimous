@@ -3,7 +3,7 @@
 <div class="container">
   <ul class="list-group">
     <% @articles.each do |article| %>
-    <li class="list-group-item"><%= link_to article.title, article_path(article)%><%= link_to '🥵', article_path(article), method: :delete, data: { confirm: 'Are you sure?' } %></li>
+    <li class="list-group-item" id="img"><%= link_to article.title, article_path(article)%><%= link_to '🥵', article_path(article), method: :delete, data: { confirm: 'Are you sure?' } %></li>
     <% end %>
   </ul>
   <div class="button">

@@ -8,9 +8,8 @@
 
 require 'faker'
 10.times do
-book = Article.new(
-    title: Faker::Movie.quote,
-    content: Faker::Book.publisher
+book = Article.create(
+    title: Faker::Beer.name,
+    content: Faker::ChuckNorris.fact,
   )
-  book.save!
 end
