@@ -1,0 +1,7 @@
+<h1> <%=@article.title%> </h1>
+
+<p style="text-align: center"><%= @article.content %></p>
+
+<button type="button" class="btn btn-primary"><%= link_to 'Edit this article', edit_article_path(@article)%></button>
+
+<button type="button" class="btn btn-primary"><%= link_to "Back to home", articles_path%> </button>
